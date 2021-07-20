@@ -1,0 +1,142 @@
+// 工具类函数
+@import './mixin.scss';
+@import '@/assets/font/font.scss';
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 500;
+}
+
+@include scrollBar();
+*:focus,*:active { outline: none; } // 清除谷歌焦点黑框
+.el-tabs__item:focus.is-active.is-focus:not(:active){
+  -webkit-box-shadow: none;
+box-shadow: none;
+}
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+p,
+blockquote,
+th,
+td {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  font-family: "PingFang SC", "Helvetica Neue", Helvetica, "Microsoft YaHei";
+  color: #191843;
+}
+
+html,
+body {
+    height: 100vh;
+    min-width:1280px;
+    overflow: auto;
+    scroll-behavior:smooth;
+    // background-color: #fffefe;
+}
+
+fieldset,
+img {
+    border: 0;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+em {
+    font-style: normal;
+}
+
+input,
+button,
+select,
+textarea {
+    outline: none;
+}
+
+textarea {
+    resize: none;
+}
+
+//禁用了文本的拖拉，尤其在谷歌下
+p {
+    text-align: justify;
+    text-justify: distribute;
+}
+
+//为了使文本段落左右两边对齐
+p {
+    word-wrap: break-word
+}
+
+a {
+    text-decoration: none;
+}
+
+i {
+    display: inline-block;
+}
+
+
+a:hover { text-decoration:none !important; }
+
+address,
+cite,
+code,
+em,
+th {
+    font-weight: normal;
+    font-style: normal;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+/*a:link{color:#009;}*/
+
+
+/*a:visited{color:#800080;}*/
+
+a:hover,
+a:active,
+a:focus {
+    text-decoration: underline;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
